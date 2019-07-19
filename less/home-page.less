@@ -3,6 +3,16 @@
 .home {
 
   .intro {
+    
+      img{
+      border-radius: 10px;
+      @media @mobile{
+        width:100%;
+      }
+
+      }
+
+    
 
     h2 {
       padding: 15px;
@@ -17,6 +27,7 @@
   .space-images {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     width: 100%;
 
     img {
@@ -24,8 +35,36 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      @media @mobile{
+        width:100%;
+        margin:20px;
+      }
+    }
+    
+    .mobilePic1{
+      img{
+      width: 95%;
+      margin: 20px 2.5% 0 0%;
+      border-radius: 20px;
+      height: auto;
+      @media @mobile{
+        display:none;
+      }
     }
   }
+
+      .mobilePic2{
+        img{
+        width: 95%;
+        margin: 20px 2.5%;
+        border-radius: 20px;
+        height: auto;
+        @media @mobile{
+          display:none;
+        }
+    }
+  }
+}
 
   .visit-planets {
     padding: 15px;
@@ -45,9 +84,18 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    @media @mobile{
+      margin-top: 0px;
+      flex-direction:column-reverse;
+      padding:15px;
+    }
 
     .walk-text {
       width: 50%;
+      @media @mobile{
+        width:100%;
+        margin-top: 20px;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -58,12 +106,37 @@
       }
 
       .btn {
+        .buttonStyle(#22283A, white, 150px);
+        .displayBox(center, center);
+        margin:0;
+        position: relative;
+        background-color: #4CAF50;
+        border: none;
+        font-size: 28px;
+        color: #FFFFFF;
+        padding: 20px;
+        width: 200px;
+        text-align: center;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+        text-decoration: none;
+        overflow: hidden;
+        cursor: pointer;
+
+        @media @mobile{
+          width:100%;
+          margin:0;
+        }
       }
-    }
+  }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      @media @mobile{
+        width:100%;
+        margin:0px;
+      }
       
       img {
         width: 100%;
@@ -72,4 +145,5 @@
       }
     }
   }
-}// home
+}
+// home

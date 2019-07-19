@@ -1,1 +1,33 @@
 // Mixins Here
+
+.nav-text(@size){
+    font-size: @size;
+}
+
+.displayBox(@justify, @align){
+    display:flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.font-style(@style, @size){
+    font-family: @style;
+    font-size: @size;
+}
+
+.buttonStyle(@background, @font, @width){
+    display: block;
+    background-color: @background;
+    margin: 0 10px 20px;
+    cursor: pointer;
+    width: @width;
+    height: 45px;
+    font-size: 2rem;
+    border-radius: 10px;
+    color:@font;
+
+    &:hover{
+        background-color:@font;
+        color:@background;
+    }
+}
