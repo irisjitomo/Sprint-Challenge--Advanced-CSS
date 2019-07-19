@@ -34,13 +34,24 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+    An adaptive website is a website that has custom made dimensions and measurements to each element in that site to fit different screens. Its a set website. But a fully responsive site is a site that can adapt to any size screen. It can adapt in a way that it isnt snappy like an adaptive site but it is smooth when a fully responsive site adapts.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+    Mobile first means to design a site or an app with the mobile screens kept in mind first. And then we modify the dimensions and elements to fit larger screens (tablets ---> laptops/desktops). Desktop first means the opposite. We design an app or website with desktop dimensions kept in mind first. Then we modify for smaller screens, from largest to smallest 
+    (tablets ---> mobile).
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+    When we put font-size: 62.5% in the html tag, it defaults every font-size in the whole HTML file. 62.5% is equivalent to 10px. 
+
 4. How would you describe preprocessing to someone new to CSS?
 
+    Preprocessing is the act of unlocking unique abilities of CSS. Imagine a video game. You start off with basic abilities, weapons. But once you get to a certain level, you unlock more. A level 1 player has access to basics, but a level 100 player also has access to the basics but has more items in his inventory. That is preprocessing. Vanilla CSS is the basic abilities. We unlock more abilities with LESS and SASS and the like. LESS and SASS can do what vanilla CSS does, but vanilla CSS cannot do what LESS and SASS can do. 
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+    My favorite concept in preprocessing is definitely parametic mixins and also escapes. Those two work hand in hand because when we need to modify dimensions for our mobile query, all you gotta do is @media @mobile{ .parametic-mixins(1, 2)}. It's very convinient to use for a fully responsive site.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
